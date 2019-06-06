@@ -8,8 +8,8 @@ RUN useradd red && groupadd redgrp
 
 WORKDIR /software/java/jdk1.8.0_131
 COPY jdk1.8.0_131 /software/java/jdk1.8.0_131
-ENV JAVA_HOME=/software/java/jdk1.8.0_131/bin
-ENV PATH=$PATH:$JAVA_HOME
+ENV JAVA_HOME=/software/java/jdk1.8.0_131
+ENV PATH=$PATH:$JAVA_HOME/bin
 
 RUN chown -R red:redgrp /software/
 
